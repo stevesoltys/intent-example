@@ -90,7 +90,7 @@ public class DefaultIntentClassifierConfidenceTest extends DefaultIntentClassifi
 
     @Test
     public void exactMatch() {
-        Expression expression = new Expression("test exact match");
+        Expression expression = expressionFactory().create("test exact match");
         Intent intent = intentFactory().create("exact", expression);
         intentRepository().register(intent);
 
