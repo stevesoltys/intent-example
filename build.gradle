@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+    id 'io.franzbecker.gradle-lombok' version '1.12'
+}
+
+group 'com.stevesoltys.intent'
+version '1.0.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+
+    maven { url 'https://jitpack.io' }
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+    maven { url 'http://zoidberg.ukp.informatik.tu-darmstadt.de/artifactory/public-model-releases-local' }
+}
+
+dependencies {
+    compile 'com.github.stevesoltys:intent:master'
+
+    compile 'org.dkpro.core:dkpro-core-build:1.9.1'
+    compile 'de.tudarmstadt.ukp.dkpro.core:de.tudarmstadt.ukp.dkpro.core.arktools-gpl:1.9.1'
+    compile 'de.tudarmstadt.ukp.dkpro.core:de.tudarmstadt.ukp.dkpro.core.stanfordnlp-gpl:1.9.1'
+    compile 'de.tudarmstadt.ukp.dkpro.core:de.tudarmstadt.ukp.dkpro.core.stanfordnlp-model-parser-en-factored:20150129.1'
+    compile 'de.tudarmstadt.ukp.dkpro.core:de.tudarmstadt.ukp.dkpro.core.io.text-asl:1.9.1'
+    compile 'de.tudarmstadt.ukp.dkpro.core:de.tudarmstadt.ukp.dkpro.core.tokit-asl:1.9.1'
+    compile 'de.tudarmstadt.ukp.dkpro.core:de.tudarmstadt.ukp.dkpro.core.textnormalizer-asl:1.9.1'
+
+    testCompile 'junit:junit:4.12'
+    compileOnly "org.projectlombok:lombok:1.16.16"
+}
+
+test {
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
