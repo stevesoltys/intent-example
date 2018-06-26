@@ -17,10 +17,11 @@ repositories {
 }
 
 dependencies {
-    compile 'com.github.stevesoltys:intent:db938c07b8be6f0cac37eba073737f9c930f9792'
+    compile 'com.github.stevesoltys:intent:b80d6259c6e51617815f66557c2939ebfaec3429'
 
     compile 'org.dkpro.core:dkpro-core-build:1.9.1'
     compile 'de.tudarmstadt.ukp.dkpro.core:de.tudarmstadt.ukp.dkpro.core.arktools-gpl:1.9.1'
+    compile 'de.tudarmstadt.ukp.dkpro.core:de.tudarmstadt.ukp.dkpro.core.arktools-model-tagger-en-ritter:20130723.1'
     compile 'de.tudarmstadt.ukp.dkpro.core:de.tudarmstadt.ukp.dkpro.core.stanfordnlp-gpl:1.9.1'
     compile 'de.tudarmstadt.ukp.dkpro.core:de.tudarmstadt.ukp.dkpro.core.stanfordnlp-model-parser-en-factored:20150129.1'
     compile 'de.tudarmstadt.ukp.dkpro.core:de.tudarmstadt.ukp.dkpro.core.io.text-asl:1.9.1'
@@ -29,6 +30,7 @@ dependencies {
 
     testCompile 'junit:junit:4.12'
     compileOnly "org.projectlombok:lombok:1.16.16"
+    testCompileOnly "org.projectlombok:lombok:1.16.16"
 }
 
 test {
