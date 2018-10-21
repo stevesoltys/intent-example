@@ -17,7 +17,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.github.stevesoltys:intent:7cdd0299c48ac935300eb3eed784b9d222800e92'
+    compile 'com.github.stevesoltys:intent:36143fbe76'
 
     compile 'org.dkpro.core:dkpro-core-build:1.9.1'
     compile 'de.tudarmstadt.ukp.dkpro.core:de.tudarmstadt.ukp.dkpro.core.arktools-gpl:1.9.1'
